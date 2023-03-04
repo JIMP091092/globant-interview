@@ -6,6 +6,14 @@ from kafka import KafkaProducer
 from config.get_schema import GetSchemas
 
 
+"""
+Produce message to insert in kafka topic, the name and schema are related to source name
+Arguments:
+    row: Series within source definition
+    source: source name 
+Returns:
+   Record metadata to locate the record in the topic 
+"""
 def producer_msg(row, source):
     session = boto3.Session(aws_access_key_id='AKIA3CAXUPMKKDB37HMQ', aws_secret_access_key='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')
 
@@ -29,6 +37,8 @@ def producer_msg(row, source):
     func_schema= getattr(GetSchemas, f'json_{source}')
 
     data= func_schema(GetSchemas, row)
-    
+
     record_metadata= producer.send(source, value=(data, schema)).get(timeout=10)
-    record_metadata
+    print(record_metadata.topic)
+    print(record_metadata.partition)
+    print(record_metadata.offset)
