@@ -1,0 +1,9 @@
+{
+    "namespace": "aws_schema_registry.integrationtests",
+    "type": "record",
+    "name": "Jobs",
+    "fields": [
+        {"name": "id", "type": "int", "description": "Id of the job" },
+        {"name": "job", "type": "string", "description": "Name of the job"}
+    ]
+}

@@ -1,0 +1,12 @@
+{
+    "namespace": "aws_schema_registry.integrationtests",
+    "type": "record",
+    "name": "Employees",
+    "fields": [
+        {"name": "id", "type": "int", "description": "Id of the employee" },
+        {"name": "name", "type": "string", "description": "Name and surname of the employee"},
+        {"name": "datetime", "type": "string", "description": "Hire datetime in ISO format"},
+        {"name": "department_id", "type": "int", "description": "Id of the department which the employee was hired for"},
+        {"name": "job_id", "type": "int", "description": "Id of the job which the employee was hired for"}
+    ]
+}
