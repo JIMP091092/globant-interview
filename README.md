@@ -3,7 +3,7 @@ This is a PoC to evaluate the technical skills of the candidate.
 
 # Solution.
 PoC uses Kafka to move records into DB based on schema.
-![image](https://drive.google.com/file/d/1MKEInhm_5nHMvRkOrJu1dd6i9bsYDUV-/view?usp=sharing)
+<a href="https://drive.google.com/uc?export=view&id=1MKEInhm_5nHMvRkOrJu1dd6i9bsYDUV-"><img src="https://drive.google.com/uc?export=view&id=1MKEInhm_5nHMvRkOrJu1dd6i9bsYDUV-" style="width: 650px; max-width: 100%; height: auto" title="Click to enlarge picture" />
 
 ## Prerequisites.
 
