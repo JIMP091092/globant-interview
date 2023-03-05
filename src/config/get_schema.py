@@ -73,3 +73,11 @@ class GetSchemas:
         }
 
         return data
+    
+    def json_errors(self, row) -> dict:
+
+        data= {
+            'transaction': str(row)
+        }
+
+        return data

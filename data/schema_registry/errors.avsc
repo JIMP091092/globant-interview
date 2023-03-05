@@ -1,0 +1,8 @@
+{
+    "namespace": "aws_schema_registry.integrationtests",
+    "type": "record",
+    "name": "Errors",
+    "fields": [
+        {"name": "transaction", "type": "string", "description": "The transaction with a typo error"}
+    ]
+}
